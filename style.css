@@ -1,0 +1,50 @@
+body{
+    background-color: rgb(233, 68, 68);
+}
+
+.header{
+    font-weight: bold;
+    font-size: 50px;
+    margin:auto;
+    color:white;
+    width:300px;
+    margin-top:80px;
+}
+
+.main-board{
+    width:480px;
+    margin:auto;
+    background-color: rgb(250, 15, 15);
+    margin-top:50px;
+}
+
+.row1, .row2, .row3 {
+    display:flex;
+    justify-content: center;
+}   
+
+.square{
+    align-items: center;
+    text-align: center;
+    width:150px;
+    margin:3px;
+    height: 150px;
+    background-color: yellow;
+}
+
+.scoreboard{
+    display:flex;
+    width:480px;
+    margin:auto;
+    background-color: royalblue;
+    margin-top:30px;
+}
+
+.footer{
+    width:200px;
+    margin:auto;
+    margin-top:150px;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+}
