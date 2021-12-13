@@ -1,5 +1,5 @@
 body{
-    background-color: rgb(233, 68, 68);
+    background-color: rgb(229, 149, 149);
 }
 
 .header{
@@ -12,7 +12,7 @@ body{
 }
 
 .main-board{
-    width:480px;
+    width:550px;
     margin:auto;
     background-color: rgb(250, 15, 15);
     margin-top:50px;
@@ -26,17 +26,26 @@ body{
 .square{
     align-items: center;
     text-align: center;
-    width:150px;
-    margin:3px;
-    height: 150px;
-    background-color: yellow;
+    width:180px;
+    height: 180px;
+    background-color: rgba(250, 15, 15, 0.425);
+}
+
+.square:hover{
+    background-color: rgb(241, 92, 92);
 }
 
 .scoreboard{
     display:flex;
     width:480px;
+    color:white;
+    font-size: 30px;
+    font-weight: bold;
     margin:auto;
-    background-color: royalblue;
+    border: 2px solid black;
+    text-align: center;
+    justify-content: space-around;
+    background-color: rgb(241, 34, 34);
     margin-top:30px;
 }
 
@@ -47,4 +56,12 @@ body{
     font-weight: bold;
     font-size: 20px;
     text-align: center;
+}
+
+#square1, #square2, #square3, #square4, #square5, #square6 {
+    border-bottom: 5px solid black;
+}
+
+#square1, #square2, #square4, #square5, #square7, #square8  {
+    border-right: 5px solid black;
 }
