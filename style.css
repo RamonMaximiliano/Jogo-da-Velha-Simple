@@ -1,4 +1,5 @@
 body{
+    box-sizing: border-box;
     background-color: rgb(229, 149, 149);
 }
 
@@ -12,6 +13,7 @@ body{
 }
 
 .main-board{
+    box-sizing: border-box;
     width:550px;
     margin:auto;
     background-color: rgb(250, 15, 15);
@@ -25,14 +27,24 @@ body{
 
 .square{
     align-items: center;
-    text-align: center;
     width:180px;
     height: 180px;
     background-color: rgba(250, 15, 15, 0.425);
+    color:white;
+    text-align: center;
 }
 
 .square:hover{
     background-color: rgb(241, 92, 92);
+}
+
+.data{
+    box-sizing: border-box;
+    font-size: 90px;
+    margin-top: 35px;
+    font-weight: bold;
+    text-align: center;
+    align-items: center;
 }
 
 .scoreboard{
