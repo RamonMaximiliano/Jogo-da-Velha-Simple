@@ -31,6 +31,55 @@ function chosePlayer(){
 /*Alterando o field "A vez é:", confome o que estava anteriormenter
 ou seja, alternando os jogadores*/
 
+
+
+
+
+
+/*Validation winner*/
+
+/*
+
+let validationArray = document.querySelectorAll("div.square")
+console.log(validationArray)
+let validFields = [['square1','square2','square3'],
+                   ['square4','square5','square6'],
+                   ['square7','square8','square9'],
+                   ['square1','square4','square7'],
+                   ['square2','square5','square8'],
+                   ['square3','square6','square9'],
+                   ['square1','square5','square9'],
+                   ['square3','square5','square7']];
+
+
+for (blockItem of validationArray) {
+    blockItem.addEventListener('click', validateVictory)
+}
+
+function validateVictory(){
+    for (x=0; validationArray.length;x++){
+        let firstValue = document.getElementById()
+    }
+
+
+}
+
+
+*/
+
+
+
+
+
+
+/*Validation winner*/
+
+
+
+
+
+
+
 /*colocar o jogador no elemento clicado*/
 let squareArray2 = document.querySelectorAll(".square");
 for (item in squareArray2){
@@ -47,19 +96,19 @@ for (item in squareArray2){
 }
 /*colocar o jogador no elemento clicado*/
 
+/*reseta a tela, como se apertasse F5. restart game*/
+function restart(){
+    window.location.reload()
+}
+/*reseta a tela, como se apertasse F5. restart game*/
+
+
 
 
 //bloquear para que só consiga adicionar jogador em elentos vazios
 //Até que trave tudo e sou obrigado a reiniciar
 
-
 //validar vitoria
 //colocar vencedor no campo vencedor
 
-
-//reseta a tela, como se apertasse F5. restart game
-function restart(){
-    window.location.reload()
-}
-//reseta a tela, como se apertasse F5. restart game
 
