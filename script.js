@@ -31,28 +31,24 @@ function chosePlayer(){
 /*Alterando o field "A vez é:", confome o que estava anteriormenter
 ou seja, alternando os jogadores*/
 
-
-
 /*colocar o jogador no elemento clicado*/
 let squareArray2 = document.querySelectorAll(".square");
 for (item in squareArray2){
     let newItem = Number(item)+1
     document.getElementById("square" + newItem).addEventListener('click', setPlayer)
     function setPlayer(){
-        document.getElementById("data" + newItem).innerHTML = document.querySelector("p.turn").innerHTML
+        let currentState = document.querySelector("p.turn").innerHTML
+        if (currentState == 'X'){
+            document.getElementById("data" + newItem).innerHTML = 'O'
+        } else {
+            document.getElementById("data" + newItem).innerHTML = 'X'
+        }
     }
 }
 /*colocar o jogador no elemento clicado*/
 
 
 
-
-
-
-
-
-// debugar porque ele ta trocando o jogador na hora que clica a primeira vez quando carrega a pagina 
-//colocar o jogador no elemento clicado
 //bloquear para que só consiga adicionar jogador em elentos vazios
 //Até que trave tudo e sou obrigado a reiniciar
 
@@ -61,9 +57,9 @@ for (item in squareArray2){
 //colocar vencedor no campo vencedor
 
 
-
-//reseta a tela, como se apertasse F5
+//reseta a tela, como se apertasse F5. restart game
 function restart(){
     window.location.reload()
 }
+//reseta a tela, como se apertasse F5. restart game
 
