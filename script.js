@@ -32,52 +32,112 @@ function chosePlayer(){
 ou seja, alternando os jogadores*/
 
 
-
-
-
-
 /*Validation winner*/
-
-/*
-
 let validationArray = document.querySelectorAll("div.square")
 console.log(validationArray)
-let validFields = [['square1','square2','square3'],
-                   ['square4','square5','square6'],
-                   ['square7','square8','square9'],
-                   ['square1','square4','square7'],
-                   ['square2','square5','square8'],
-                   ['square3','square6','square9'],
-                   ['square1','square5','square9'],
-                   ['square3','square5','square7']];
-
 
 for (blockItem of validationArray) {
     blockItem.addEventListener('click', validateVictory)
 }
 
+let validFields = [['data1','data2','data3'],
+                   ['data4','data5','data6'],
+                   ['data7','data8','data9'],
+                   ['data1','data4','data7'],
+                   ['data2','data5','data8'],
+                   ['data3','data6','data9'],
+                   ['data1','data5','data9'],
+                   ['data3','data5','data7']];
+
 function validateVictory(){
-    for (x=0; validationArray.length;x++){
-        let firstValue = document.getElementById()
-    }
-
-
+    for (x=0; x <= validationArray.length;x++){
+        let circle = x+1
+        let firstValue = document.getElementById("data" + circle).innerHTML
+        console.log(firstValue)
+            if
+            (
+            firstValue != ''
+            &&
+            firstValue === document.getElementById("data1").innerHTML 
+            &&
+            firstValue === document.getElementById("data2").innerHTML 
+            &&
+            firstValue === document.getElementById("data3").innerHTML)
+            {console.log(`O ganhador é ${firstValue}`); 
+            document.getElementById("result").innerHTML = firstValue }
+            else if 
+            (firstValue != ''
+            &&
+            firstValue == document.getElementById("data4").innerHTML 
+            &&
+            firstValue == document.getElementById("data5").innerHTML 
+            &&
+            firstValue == document.getElementById("data6").innerHTML)
+            {console.log(`O ganhador é ${firstValue}`);
+            document.getElementById("result").innerHTML = firstValue }
+            else if 
+            (firstValue != ''
+            &&
+            firstValue == document.getElementById("data7").innerHTML 
+            &&
+            firstValue == document.getElementById("data8").innerHTML 
+            &&
+            firstValue == document.getElementById("data9").innerHTML)
+            {console.log(`O ganhador é ${firstValue}`);
+            document.getElementById("result").innerHTML = firstValue }
+            else if
+            (firstValue != ''
+            &&
+            firstValue == document.getElementById("data1").innerHTML 
+            &&
+            firstValue == document.getElementById("data4").innerHTML 
+            &&
+            firstValue == document.getElementById("data7").innerHTML)
+            {console.log(`O ganhador é ${firstValue}`);
+            document.getElementById("result").innerHTML = firstValue }
+            else if 
+            (firstValue != ''
+            &&
+            firstValue == document.getElementById("data2").innerHTML 
+            &&
+            firstValue == document.getElementById("data5").innerHTML 
+            &&
+            firstValue == document.getElementById("data8").innerHTML)
+            {console.log(`O ganhador é ${firstValue}`);
+            document.getElementById("result").innerHTML = firstValue }
+            else if 
+            (firstValue != ''
+            &&
+            firstValue == document.getElementById("data3").innerHTML 
+            &&
+            firstValue == document.getElementById("data6").innerHTML 
+            &&
+            firstValue == document.getElementById("data9").innerHTML)
+            {console.log(`O ganhador é ${firstValue}`);
+            document.getElementById("result").innerHTML = firstValue }
+            else if 
+            (firstValue != ''
+            &&
+            firstValue == document.getElementById("data1").innerHTML 
+            &&
+            firstValue == document.getElementById("data5").innerHTML 
+            &&
+            firstValue == document.getElementById("data9").innerHTML)
+            {console.log(`O ganhador é ${firstValue}`);
+            document.getElementById("result").innerHTML = firstValue }
+            else if 
+            (firstValue != ''
+            &&
+            firstValue == document.getElementById("data3").innerHTML 
+            &&
+            firstValue == document.getElementById("data5").innerHTML 
+            &&
+            firstValue == document.getElementById("data7").innerHTML)
+            {console.log(`O ganhador é ${firstValue}`);
+            document.getElementById("result").innerHTML = firstValue }
+    } 
 }
-
-
-*/
-
-
-
-
-
-
 /*Validation winner*/
-
-
-
-
-
 
 
 /*colocar o jogador no elemento clicado*/
@@ -103,12 +163,14 @@ function restart(){
 /*reseta a tela, como se apertasse F5. restart game*/
 
 
-
-
 //bloquear para que só consiga adicionar jogador em elentos vazios
 //Até que trave tudo e sou obrigado a reiniciar
 
 //validar vitoria
-//colocar vencedor no campo vencedor
+
+
+
+
+
 
 

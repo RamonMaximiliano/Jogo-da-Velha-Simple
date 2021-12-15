@@ -50,6 +50,7 @@ body{
 .scoreboard{
     display:flex;
     width:480px;
+    height: 180px;;
     color:white;
     font-size: 30px;
     font-weight: bold;
